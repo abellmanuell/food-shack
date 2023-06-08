@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      ["^/api"]: {
-        target: "https://apexcryptorecovery.com/",
+      ["^/products"]: {
+        target: "https://burger-serverless-functions.netlify.app/.netlify/functions/",
         changeOrigin: true,
         followRedirects: true,
       },
