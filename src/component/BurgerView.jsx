@@ -38,15 +38,15 @@ export default function BurgerView() {
         throw err;
       });
   }, [products]);
-
+/*
   useEffect(() => {
     axios.get("http://localhost:4000/api/user/1").then((res) => {
       if (res.status >= 200 && res.status <= 299) {
-        //setCustomer(res.data);
+        setCustomer(res.data);
       }
     });
   }, []);
-
+*/
   if (isLoading) {
     return <LoadingSpinner />;
   }
