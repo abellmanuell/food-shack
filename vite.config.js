@@ -9,6 +9,7 @@ export default defineConfig({
       "/products": {
         target: "https://burger-serverless-functions.netlify.app/.netlify/functions/",
         changeOrigin: true,
+        secure: true,
         followRedirects: true,
       },
     },
