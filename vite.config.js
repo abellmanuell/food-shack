@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      ["^/products"]: {
+      "/products": {
         target: "https://burger-serverless-functions.netlify.app/.netlify/functions/",
         changeOrigin: true,
         followRedirects: true,
