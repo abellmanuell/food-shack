@@ -24,7 +24,7 @@ export default function BurgerView() {
 
   useEffect(() => {
     axios
-      .get("https://burger-serverless-functions.netlify.app/.netlify/functions/products")
+      .get("http://abellmanuell.eu-4.evennode.com/api/products")
       .then((res) => {
         if (res.status >= 200 && res.status <= 299) {
           setProducts(res.data);
