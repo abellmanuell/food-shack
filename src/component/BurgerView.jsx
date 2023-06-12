@@ -21,7 +21,7 @@ const data = [
       _id: 1,
       product_name: "Southwest Kick",
       price: 8.99,
-      img: "/southwest_kick.jpg",
+      img: "https://github.com/abellmanuell/food-shack/tree/main/public/southwest_kick.jpg",
       prodt_weight: 140,
     },
 
@@ -29,7 +29,7 @@ const data = [
       _id: 2,
       product_name: "Hamburger",
       price: 4.5,
-      img: "/hamburger.jpg",
+      img: "https://github.com/abellmanuell/food-shack/tree/main/public/hamburger.jpg",
       prodt_weight: 85,
     },
   ]
