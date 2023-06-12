@@ -36,35 +36,17 @@ const data = [
 
 export default function BurgerView() {
   const [customer, setCustomer] = useState(user);
-  const [products, setProducts] = useState(data);
+  const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
-    axios
-      .get("http://abellmanuell.eu-4.evennode.com/api/products")
-      .then((res) => {
-        if (res.status >= 200 && res.status <= 299) {
-          setProducts(res.data);
+          setProducts(data),
           setIsLoading(false);
           setIsError(true);
-        }
-      })
-      .catch((err) => {
-        setIsLoading(false);
-        setIsError(false);
-        throw err;
-      });
-  }, [products]);
-/*
-  useEffect(() => {
-    axios.get("http://localhost:4000/api/user/1").then((res) => {
-      if (res.status >= 200 && res.status <= 299) {
-        setCustomer(res.data);
-      }
-    });
+
   }, []);
-*/
+
   if (isLoading) {
     return <LoadingSpinner />;
   }
